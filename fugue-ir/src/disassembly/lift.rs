@@ -339,6 +339,7 @@ where
 }
 
 #[repr(transparent)]
+#[derive(Debug)]
 pub struct IRBuilderArena(Arena);
 
 impl IRBuilderArena {
