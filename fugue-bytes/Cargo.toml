@@ -7,6 +7,9 @@ license = "MIT"
 description = "A binary analysis framework written in Rust"
 homepage = "https://fugue.re"
 
+[features]
+extra-integer-types = []
+
 [dependencies]
 byteorder = "1"
 paste = "1"

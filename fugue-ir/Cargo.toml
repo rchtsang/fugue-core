@@ -7,6 +7,9 @@ license = "MIT"
 description = "A binary analysis framework written in Rust"
 homepage = "https://fugue.re"
 
+[features]
+bigint = []
+
 [dependencies]
 ahash = { version = "0.8", features = ["serde"] }
 bumpalo = { version = "3.14", features = ["boxed", "collections"] }

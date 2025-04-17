@@ -359,7 +359,7 @@ mod test {
         let mut pt = MmapTable::<U64<LE>>::temporary("project")?;
 
         {
-            let mut writer = pt.typed_writer::<(String, String, Vec<u8>)>()?;
+            let writer = pt.typed_writer::<(String, String, Vec<u8>)>()?;
 
             for k in 0..10_000_000u64 {
                 println!("{:?} ± {:?} ± {:x?}",

@@ -4,6 +4,7 @@ use std::ops::Add;
 use fugue_ir::{Address, VarnodeData};
 use rkyv::{Archive, Deserialize, Serialize};
 
+// NOTE: Location appears to be defined a second time here and is present in both fugue-core::ir and fugue-db
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[derive(Archive, Deserialize, Serialize)]
 pub struct Location {
